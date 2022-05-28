@@ -5,15 +5,11 @@
 
 
 def read_file_content(filename):
-    # [assignment] Add your code here
     # reading the file
 
     with open("./story.txt", "r") as open_file:
         read_file = open_file.read()
     return read_file
-
-    # return "Hello World"
-
 
 def count_words():
     text = read_file_content("./story.txt")
@@ -29,5 +25,5 @@ def count_words():
             count[i] = 1
     return count
 
-    # return {"as": 10, "would": 20}
 print(count_words())
+    
